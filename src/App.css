@@ -1,17 +1,17 @@
 :root {
- --mainBlue:#2a2a72;
- --lightBlue:#009ffd;
- --mainWhite:#f3f3f3;
- --mainDark:#232528;
- --mainYellow:#ffa400;
+ --mainBlue:#92bfdd;
+ --lightBlue:#123e50;
+ --mainWhite:#ebd3eb;
+ --mainDark:#63748a;
+ --mainYellow:#e5c488;
 }
 body{
-  font-family:"Anton", sans-serif !important;
+  font-family:"Oldtown", fantasy !important;
   background:var(--mainWhite) !important;
   color:var(--mainDark) !important;
 }
 .text-title{
-  font-family: 'Anton', cursive;
+  font-family: 'Oldtown', fantasy;
   letter-spacing:0.3rem;
   text-transform: uppercase; 
 }
@@ -24,7 +24,7 @@ body{
 .btn-black{
   background:transparent;
   text-transform:capitalize;
-  font-size:0.8rem !important;
+  font-size:0.9rem !important;
   color:var(--mainDark);
   border-radius: 0 !important;
   border:0.1rem solid var(--mainDark) !important;
@@ -35,6 +35,6 @@ body{
 }
 .cart-icon{
   cursor:pointer;
-  font-size:1.2rem;
+  font-size:1.5rem;
   color:var(--mainYellow);
 }

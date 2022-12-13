@@ -29,3 +29,11 @@ npm run build
 ```
 
 Builds the app for production to the `build` folder.<br>
+
+
+run this command for mac
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+
+npm start package.json
+```

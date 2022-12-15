@@ -8,17 +8,29 @@ import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
 import Modal from './components/Modal';
-
+// import Loginapp from './components/Loginapp';
+import Signup from './components/Loginapp/Signup';
+import Login from './components/Loginapp/Login';
+import ForgotPassword from './components/Loginapp/ForgotPassword';
+import { AuthProvider } from './components/contexts/AuthContext';
 function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <Switch>
-        <Route exact path="/" component={ProductList} />
-        <Route path="/details" component={Details} />
-        <Route path="/cart" component={Cart} />
-        <Route component={Default} />
-      </Switch>
+      <AuthProvider>
+        <Switch>
+          <Route exact path="/" component={ProductList} />
+          <Route path="/details" component={Details} />
+          <Route path="/cart" component={Cart} />
+          {/* <Route path="/login" component={Loginapp} /> */}
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
+          <Route path="/forgot-password" component={ForgotPassword} />
+              
+          
+          <Route component={Default} />
+        </Switch>
+        </AuthProvider>
       <Modal />
     </React.Fragment>
   );

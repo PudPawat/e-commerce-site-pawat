@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import App from '../App';
 import {Link} from 'react-router-dom';
 import logo from '../logo.svg';
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
+import {loginEmailPassword} from '../firebase'
 
 export default class Navbar extends Component {
     render() {
@@ -17,6 +19,13 @@ export default class Navbar extends Component {
                        Products
                     </Link>
                  </li>
+               </ul>
+               <ul className="navbar-nav align-items-center">
+               <Link to="/login" className="ml-auto">
+                  <ButtonContainer>
+                      <i className="fas fa-cart-plus">LOGIN</i>
+                  </ButtonContainer>
+               </Link>
                </ul>
                <Link to="/cart" className="ml-auto">
                   <ButtonContainer>

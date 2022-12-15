@@ -8,7 +8,7 @@ export const storeProducts = [
     id: 1,
     title: "Thai Silk",
     img: "img/product-1.png",
-    price: 10,
+    price: 20,
     company: "GOOGLE",
     info:
       "Scarves, shirts, cushion covers, wallets and pillow covers are all hand-weaved using the smoothest threads of silk. It is laced out of caterpillars fed on a strict mulberry diet, woven with gradient textures and designs. Thai silk is one of the most exotic gifts and souvenirs in Thailand you can get for your family and friends, or yourself.",

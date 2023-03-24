@@ -42,9 +42,10 @@
 
       console.log(window.QGSettings);
       // window.QGSettings.push.requestSelf = true;
+      window.QGSettings['push']['requestSelf'] = true;
       console.log("in the function",window.QGSettings);
     // }(window, document, 'script', 'https://cdn.qgr.ph/qgraph.54f567e3ef89096a7b68.js');
-    }(window, document, 'script', 'public/pixel.js');
+    }(window, document, 'script', './pixel.js');
     
     console.log("test ",window.QGSettings);
   </script>

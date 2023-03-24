@@ -67,6 +67,7 @@ window.QGSettings = {
      p.async=!0;
      p.src=a;
      h=g.getElementsByTagName(r)[0];
+     console.log("q:",q,"g:",g,"a:",a,"r:",r)
      h.parentNode.insertBefore(p,h);
      q.qg.initialized = true;
  }(window,document,'script','https://cdn.qgraph.io/v3/r/aiqua.js');

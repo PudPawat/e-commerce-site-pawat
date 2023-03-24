@@ -33,14 +33,20 @@
     !function (q, g, r, a, p, h, js) {
       if (q.qg) return;
       js = q.qg = function () {
+        console.log(arguments);
         js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
       };
       js.queue = [];
       p = g.createElement(r); p.async = !0; p.src = a; h = g.getElementsByTagName(r)[0];
       h.parentNode.insertBefore(p, h);
-    }(window, document, 'script', 'https://cdn.qgr.ph/qgraph.54f567e3ef89096a7b68.js');
 
-    console.log(window.QGSettings);
+      console.log(window.QGSettings);
+      // window.QGSettings.push.requestSelf = true;
+      console.log("in the function",window.QGSettings);
+    // }(window, document, 'script', 'https://cdn.qgr.ph/qgraph.54f567e3ef89096a7b68.js');
+    }(window, document, 'script', 'public/pixel.js');
+    
+    console.log("test ",window.QGSettings);
   </script>
 
   <!-- Google Tag Manager -->
@@ -56,32 +62,7 @@
 
 
 
-  <script>
-
-    
-    const isWindows1 = navigator.platform.indexOf("Win") > -1;
-    const isMac1 = navigator.platform.indexOf("Mac") > -1;
-    const isLinux1 = navigator.platform.indexOf("Linux") > -1;
-    const isIOS1 = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
-    const isAndroid1 = /(Android)/g.test(navigator.userAgent);
-
-    if (isWindows1) {
-      console.log("Windows OS detected");
-    } else if (isMac1) {
-      console.log("Mac OS detected");
-      qg("prompt-push");
-    } else if (isLinux1) {
-      console.log("Linux OS detected");
-    } else if (isIOS1) {
-      console.log("iOS detected");
-    } else if (isAndroid1) {
-      console.log("Android OS detected");
-    } else {
-      console.log("Unknown OS detected");
-    }
-
-    console.log(window.QGSettings);
-  </script>
+  
     
 </head>
 
@@ -127,10 +108,37 @@
       console.log("Unknown OS detected");
     }
 
-    console.log(window.QGSettings);
+    console.log(window.QGSettings.push);
   </script>
     
 
 </body>
+
+<script>
+
+    
+  const isWindows1 = navigator.platform.indexOf("Win") > -1;
+  const isMac1 = navigator.platform.indexOf("Mac") > -1;
+  const isLinux1 = navigator.platform.indexOf("Linux") > -1;
+  const isIOS1 = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
+  const isAndroid1 = /(Android)/g.test(navigator.userAgent);
+
+  if (isWindows1) {
+    console.log("Windows OS detected");
+  } else if (isMac1) {
+    console.log("Mac OS detected");
+    qg("prompt-push");
+  } else if (isLinux1) {
+    console.log("Linux OS detected");
+  } else if (isIOS1) {
+    console.log("iOS detected");
+  } else if (isAndroid1) {
+    console.log("Android OS detected");
+  } else {
+    console.log("Unknown OS detected");
+  }
+
+  console.log("out ",window.QGSettings);
+</script>
 
 </html>

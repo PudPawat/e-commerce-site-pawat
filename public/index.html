@@ -98,13 +98,14 @@
       console.log("Windows OS detected");
     } else if (isMac) {
       console.log("Mac OS detected");
-      qg("prompt-push");
     } else if (isLinux) {
       console.log("Linux OS detected");
     } else if (isIOS) {
       console.log("iOS detected");
+      qg("prompt-push");
     } else if (isAndroid) {
       console.log("Android OS detected");
+      qg("prompt-push");
     } else {
       console.log("Unknown OS detected");
     }
@@ -115,31 +116,5 @@
 
 </body>
 
-<script>
-
-    
-  const isWindows1 = navigator.platform.indexOf("Win") > -1;
-  const isMac1 = navigator.platform.indexOf("Mac") > -1;
-  const isLinux1 = navigator.platform.indexOf("Linux") > -1;
-  const isIOS1 = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
-  const isAndroid1 = /(Android)/g.test(navigator.userAgent);
-
-  if (isWindows1) {
-    console.log("Windows OS detected");
-  } else if (isMac1) {
-    console.log("Mac OS detected");
-    qg("prompt-push");
-  } else if (isLinux1) {
-    console.log("Linux OS detected");
-  } else if (isIOS1) {
-    console.log("iOS detected");
-  } else if (isAndroid1) {
-    console.log("Android OS detected");
-  } else {
-    console.log("Unknown OS detected");
-  }
-
-  console.log("out ",window.QGSettings);
-</script>
 
 </html>

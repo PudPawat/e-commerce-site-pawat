@@ -3,6 +3,31 @@
 
 <head>
 
+  <!-- copy text function for campaign start  -->
+<script>
+  function copyText(textToCopy) {
+    // var textToCopy = "BOTPT5"; // Replace with the text you want to copy
+
+    // Create a temporary input element
+    var tempInput = document.createElement("input");
+    tempInput.style.position = "absolute";
+    tempInput.style.left = "-1000px";
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+
+    // Copy the text to the clipboard
+    tempInput.select();
+    document.execCommand("copy");
+
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+
+    // Alert the user or perform any other actions
+    alert("Text copied to clipboard: " + textToCopy);
+  }
+</script>
+<!-- copy text function for campaign end  -->
+
   <meta charset="utf-8" />
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -79,30 +104,7 @@
 <!-- End of Woopra Code -->
 
 
-<!-- copy text function for campaign start  -->
-<script>
-  function copyText(textToCopy) {
-    // var textToCopy = "BOTPT5"; // Replace with the text you want to copy
 
-    // Create a temporary input element
-    var tempInput = document.createElement("input");
-    tempInput.style.position = "absolute";
-    tempInput.style.left = "-1000px";
-    tempInput.value = textToCopy;
-    document.body.appendChild(tempInput);
-
-    // Copy the text to the clipboard
-    tempInput.select();
-    document.execCommand("copy");
-
-    // Remove the temporary input element
-    document.body.removeChild(tempInput);
-
-    // Alert the user or perform any other actions
-    alert("Text copied to clipboard: " + textToCopy);
-  }
-</script>
-<!-- copy text function for campaign end  -->
     
 </head>
 

@@ -1,6 +1,14 @@
 import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 
+// auth.js
+import firebase from './firebase-config'; // Import the Firebase configuration
+import * as firebaseui from 'firebaseui';
+import 'firebaseui/dist/firebaseui.css';
+
+// Additional authentication setup code using Firebase and FirebaseUI
+
+
 const app = firebase.initializeApp({
   apiKey: "AIzaSyCxkkx3GsBE0bygj_Pz7mBgl4Njuh9DQMw",
   authDomain: "pawatmock.firebaseapp.com",

@@ -1,6 +1,13 @@
 import React, { useContext, useState, useEffect } from "react"
 import { auth } from "./firebase"
 
+// auth.js
+import firebase from './firebase-config'; // Import the Firebase configuration
+import * as firebaseui from 'firebaseui';
+import 'firebaseui/dist/firebaseui.css';
+
+// Additional authentication setup code using Firebase and FirebaseUI
+
 const AuthContext = React.createContext()
 
 export function useAuth() {

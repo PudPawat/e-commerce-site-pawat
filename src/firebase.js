@@ -1,10 +1,7 @@
 import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 
-// auth.js
-import firebase from './firebase-config'; // Import the Firebase configuration
-import * as firebaseui from 'firebaseui';
-import 'firebaseui/dist/firebaseui.css';
+
 
 // Additional authentication setup code using Firebase and FirebaseUI
 

@@ -1,31 +1,77 @@
 <div id="aiqua">
-    <div class="aiqua__image_container">
-      <a target="_blank" href="https://www.chubbtravelinsurance.co.th/cti/th-th/home/promotions/2024/flyanywhere-campaign.html?utm_source=appier&utm_medium=organic-reach&utm_campaign=na-awareness&utm_content=flyanywhere-banner-mar24">
-        <!-- Image content goes here -->
-      </a>
-    </div>
+  <div class="aiqua__image_container"></div>
+  <div class="aiqua__content">
+    <div class="aiqua__title">This is your Primary Heading.</div>
+    <div class="aiqua__message">Add some more descriptive content here to describe your product or service in a more detailed way. This could also be an explanation of the details of your offer if you are running a promotion.</div>
+    <a class="aiqua__button" href="<!-- PLEASE REPLACE YOUR LINK -->">Button</a>
   </div>
-  
-  <style>
-    #aiqua {
-      display: flex;
-      background-color: #fff;
-      width: 500px;
-      height: 500px;
+</div>
+<script>
+  setTimeout(function() {
+    // Find the element with class "qg-inweb-close" and simulate a click
+    var element = document.querySelector(".qg-inweb-close");
+    if (element) {
+        element.click();
+        console.log("removed")
     }
-    
-    #aiqua .aiqua__image_container {
-      flex: 1;
-      background-position: 100% 100%;
-      background-size: cover;
-      background-image: url(https://www.chubbtravelinsurance.co.th/content/dam/chubbglobaltravel/Staticfiles/ACETravel/CTITH/article-pictures/appier-images/appier-fly-anywhere-banner2.jpg);
-    }
-    
-    /* Optional styling for the image content */
-    .aiqua__image_container a {
-      display: block; /* Ensures the anchor tag takes up the full space of the image container */
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-  
+    else {
+      document.querySelector("#aiqua").remove();
+      console.log("removed aiqua")
+  }
+}, 5000);
+</script>
+
+<style>
+#aiqua {
+  display: flex;
+  background-color: #fff;
+  width: 600px;
+  height: 400px;
+}
+
+#aiqua .aiqua__image_container {
+  flex: 1;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(https://cdn.qgraph.io/img/in-web-preview-img-medium.png);
+}
+
+#aiqua .aiqua__content {
+  flex: 1;
+  justify-content: center;
+  margin: 39px 20px 0;
+}
+
+#aiqua .aiqua__content .aiqua__title {
+  width: 260px;
+  height: 82px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  white-space: normal;
+  margin: 0 0 10px;
+}
+
+#aiqua .aiqua__content .aiqua__message {
+  width: 260px;
+  height: 114px;
+  font-size: 14px;
+  color: #000;
+  white-space: normal;
+  margin: 0 0 85px;
+}
+
+#aiqua .aiqua__content .aiqua__button {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #0090ff;
+  cursor: pointer;
+  margin: 0 0 30px;
+  text-decoration: none;
+}
+</style>

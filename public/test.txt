@@ -529,3 +529,6 @@ trino:ns_customer_unilab> select distinct profiles_user_id from aiqua__online_pr
  1168655          
 (523 rows)
 (END)
+
+"2023-09-22T01:51:23.421Z","12e6d4e9-34e0-4c3d-a9a1-6564caba2622","0848645185","ดอกหญ้า พาขวัญ","5792333e-29b5-4d51-9cfc-dcf744090e40","9b651e0b-46ba-4ed4-9b61-0c2c0cbcd133","1","2026-07-31T00:00:00.000Z","Synergy Growth","38ebe0c4-e56f-4d65-87b1-6e8dab62baee","SynergyGrowth System","VimutHospital:vimut.com:pageA","JS Webform","th","ACCEPT","9ea323a1-8a80-4300-a572-3fa6a98e15e1","เพื่อเป็นช่องทางการแจ้งข้อมูลข่าวสาร","SynergyGrowthMarketing","1715677487","12e6d4e9-34e0-4c3d-a9a1-6564caba2622","1715677487_12e6d4e9-34e0-4c3d-a9a1-6564caba2622","0848645185",""
+

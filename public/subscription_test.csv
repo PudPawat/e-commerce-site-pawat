@@ -1,0 +1,11 @@
+ID,Email,Type,Customer First Name,Customer Last Name,Current Status,Date of Subscription (1st),Subscription Time,Update time for subscription,Update time for unsubscription,
+454,godoxoippoillou-5880@yopmail.com,Customer,June,Test,Subscribed,19/11/2024 23:27,,,,
+451,simop51064@janfab.com,Customer,Test,Appier,Subscribed,19/11/2024 00:00,11:27:00 PM,,,UTC8 is the final timing
+448,mage.sidik@gmail.com,Customer,Purnomo,Sidik,Subscribed,19/11/2024 00:00,11:27:00 PM,,,
+442,nur.zatul@bridzia.com.my,Guest,,,Subscribed,19/11/2024 00:00,,,,
+436,testyhong5@gmail.com,Customer,Test,YHONG 5,Subscribed,,,19/11/2024 00:00,,If newly subscribed - add new line
+433,testyhong4@gmail.com,Customer,Test,YHONG 4,Subscribed,,,,,"If unsubscribed, there will be data for column I"
+430,asdasdasd@3213.cvom,Guest,,,Subscribed,,,,,"if resubscribed, there will be data for column G"
+427,bridziacikun@hotmail.com,Customer,bridzia,cikun,Subscribed,,,,,
+412,rockyshumcl@gmail.com,Customer,Shum,Chun Lok,Subscribed,,,,,
+409,pyeeyan@yahoo.com.hk,Customer,Yee Yan,Poon,Subscribed,,,,,
